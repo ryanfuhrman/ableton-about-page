@@ -99,23 +99,30 @@ header {
 
 .main-container {
   background-color: #fff;
-  padding: 60px 8.3333vw 8.3333vw 8.3333vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.main-title {
+.banner {
   width: 100%;
   height: 850px;
+  padding: 60px 8.3333vw 0 8.3333vw;
+}
+
+.banner-title {
+  position: relative;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   background-image: url("../imgs/header.jpg");
+
+  border: 3px dotted red;
 }
 
-.main-title-text {
+.banner-title-text {
   font-family: sans-serif;
   color: rgb(255, 94, 66);
   position: absolute;
@@ -128,7 +135,7 @@ header {
 
 .text-sections {
   width: 65vw;
-  margin: 10vh 0;
+  margin: 8vw 0;
   line-height: 2;
 }
 
@@ -148,21 +155,36 @@ header {
 
 .img-section--yellow {
   width: 100%;
-  height: 60%;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.img-section--yellow-images {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .img-section--yellow-img1 {
-  width: 40%;
-  height: auto;
+  height: 40vw;
+  width: 40vw;
 }
 
-.img-section--yellow-img1 {
-  width: 40%;
-  height: auto;
+.img-section--yellow-img2 {
+  width: 33.3333vw;
+  height: 25vw;
 }
 
 .img-section--yellow-block {
-  width: 60%;
-  height: 60vh;
-  background-color: rgb(255, 255, 155);
+  width: 58vw;
+  height: 58vw;
+  background-color: rgb(255, 255, 166);
+  z-index: 1;
 }
