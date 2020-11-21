@@ -118,8 +118,6 @@ header {
   background-size: cover;
   background-position: 50% 50%;
   background-image: url("../imgs/header.jpg");
-
-  border: 3px dotted red;
 }
 
 .banner-title-text {
@@ -134,9 +132,9 @@ header {
 }
 
 .text-sections {
-  width: 65vw;
+  width: 50vw;
   margin: 8vw 0;
-  line-height: 2;
+  line-height: 1.75;
 }
 
 .text-sections--large-text {
@@ -187,4 +185,21 @@ header {
   height: 58vw;
   background-color: rgb(255, 255, 166);
   z-index: 1;
+}
+
+.video-section--small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.video-section--small-player {
+  width: 50vw;
+  height: 28vw;
+}
+
+.video-section--small-player-description {
+  font-size: 12px;
+  font-weight: 500;
 }
