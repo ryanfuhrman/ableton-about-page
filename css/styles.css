@@ -99,6 +99,8 @@ header {
 
 .main-container {
   background-color: #fff;
+  padding-bottom: 8.3333vw;
+  margin-bottom: 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,9 +194,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
-
-.video-section-player {
 }
 
 .small-video {
@@ -299,4 +298,49 @@ header {
   height: 58.33333vw;
   position: absolute;
   z-index: 1;
+}
+
+.img-section--blue {
+  margin: 0 8.3333vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.blue-img {
+  width: 45vw;
+  height: 50vw;
+}
+
+.blue-block {
+  background-color: rgb(172, 198, 255);
+  width: 100%;
+  height: 41.66667vw;
+  padding: 8.3333vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.blue-block-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.blue-block-text-link {
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #fff;
+}
+
+.footer-company-name {
+  margin: 0;
 }
