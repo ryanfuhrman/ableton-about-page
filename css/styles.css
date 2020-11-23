@@ -187,19 +187,27 @@ header {
   z-index: 1;
 }
 
-.video-section--small {
+.video-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.video-section--small-player {
+.video-section-player {
+}
+
+.small-video {
   width: 50vw;
   height: 28vw;
 }
 
-.video-section--small-player-description {
+.large-video {
+  width: 83vw;
+  height: 48vw;
+}
+
+.video-section-player-description {
   font-size: 12px;
   font-weight: 500;
 }
@@ -250,5 +258,45 @@ header {
   width: 58vw;
   height: 75vw;
   background-color: rgb(189, 255, 189);
+  z-index: 1;
+}
+
+.img-section--purple {
+  height: 60vw;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.purple-imgs {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.purple-imgs-img1 {
+  width: 33.3333vw;
+  height: 25vw;
+  margin-left: 8.3333vw;
+}
+
+.purple-imgs-img2 {
+  width: 41.66667vw;
+  height: 41.66667vw;
+}
+
+.purple-block {
+  background-color: rgb(211, 183, 255);
+  width: 66.66667vw;
+  height: 58.33333vw;
+  position: absolute;
   z-index: 1;
 }
