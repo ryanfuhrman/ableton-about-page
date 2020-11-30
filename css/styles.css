@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -7,6 +9,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
   background-color: #f3f3f3;
@@ -14,6 +17,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+select {
+  /* // A reset of styles, including removing the default dropdown arrow */
+  appearance: none;
+  /* // Additional resets for further consistency */
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  font-weight: inherit;
 }
 
 .wrapper {
@@ -98,6 +117,7 @@ header {
 }
 
 .main-container {
+  width: 100%;
   background-color: #fff;
   padding-bottom: 8.3333vw;
   margin-bottom: 3px;
@@ -428,8 +448,45 @@ footer {
   background-color: blue;
   color: #fff;
   font-weight: 500;
-  width: 120px;
+  min-width: 120px;
   border: none;
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: row;
+}
+
+.select {
+  height: 30px;
+  padding: 8px 5px;
+  border: none;
+  background-color: rgb(236, 236, 236);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1.1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: #000;
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.language {
+  width: 150px;
+  margin-right: 2px;
+}
+
+.location {
+  width: 215px;
 }
 
 .bottom-links {
