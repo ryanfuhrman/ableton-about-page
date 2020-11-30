@@ -134,21 +134,20 @@ header {
 }
 
 .banner-title {
-  position: relative;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   background-image: url("../imgs/header-large.jpg");
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-title-text {
   font-family: sans-serif;
   color: rgb(255, 94, 66);
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   font-size: 125px;
   font-weight: 400;
 }
