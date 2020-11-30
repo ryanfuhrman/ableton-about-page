@@ -344,7 +344,7 @@ footer {
 
 .footer-company-name {
   margin-bottom: 5vw;
-  font-size: 50px;
+  font-size: 55px;
 }
 
 .footer-links {
@@ -395,6 +395,41 @@ footer {
   width: 50px;
   height: auto;
   padding-right: 15px;
+}
+
+.newsletter-links {
+}
+
+.newsletter-signup {
+}
+
+.newsletter-signup-description {
+  line-height: 1.75;
+}
+
+.newsletter-form {
+  display: flex;
+  height: 43px;
+  margin-top: 5px;
+}
+
+.newsletter-form-input {
+  padding: 5px 15px;
+  background-color: rgb(236, 236, 236);
+  border: none;
+  font-size: 17px;
+}
+
+.newsletter-form-input::placeholder {
+  color: rgb(161, 161, 161);
+}
+
+.newsletter-form-button {
+  background-color: blue;
+  color: #fff;
+  font-weight: 500;
+  width: 120px;
+  border: none;
 }
 
 .bottom-links {
